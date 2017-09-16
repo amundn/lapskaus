@@ -10,7 +10,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public -o build/storybook",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@storybook/addon-storyshots": "^3.2.8",
+    "@storybook/react": "^3.2.8",
+    "coveralls": "^2.13.1"
   }
 }
