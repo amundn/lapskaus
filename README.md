@@ -1,5 +1,3 @@
-[![Greenkeeper badge](https://badges.greenkeeper.io/Artsdatabanken/lapskaus.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/Artsdatabanken/lapskaus.svg?branch=master)](https://travis-ci.org/Artsdatabanken/lapskaus) [![Coverage Status](https://coveralls.io/repos/github/Artsdatabanken/lapskaus/badge.svg?branch=master)](https://coveralls.io/github/Artsdatabanken/lapskaus?branch=master)
 ![Dependencies](https://david-dm.org/artsdatabanken/lapskaus.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Artsdatabanken/lapskaus.svg)](https://greenkeeper.io/)
