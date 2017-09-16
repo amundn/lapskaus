@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "8"
+script:
+  - "yarn test"
+  - "yarn build"
+  - "yarn build-storybook"
+deploy:
+  provider: surge
+  project: ./build/
+  domain: outgoing-front.surge.sh
+  skip_cleanup: true
+after_success:
+  - npm run report-coverage
+notifications:
+  slack:
+    on_success: change
+    on_failure: change
