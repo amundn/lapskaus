@@ -6,10 +6,12 @@ script:
   - "yarn build"
   - "yarn build-storybook"
 deploy:
-  provider: surge
-  project: ./build/
-  domain: outgoing-front.surge.sh
+  provider: pages
+  local_dir: ./build/
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
 after_success:
   - npm run report-coverage
 notifications:
