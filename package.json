@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "material-ui": "^0.19.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.13"
@@ -20,7 +21,8 @@
   },
   "devDependencies": {
     "@storybook/react": "^3.2.8",
-    "coveralls": "^2.13.1"
+    "coveralls": "^2.13.1",
+    "storybook-addon-material-ui": "^0.8.0"
   },
   "pre-commit": [
     "lint",
