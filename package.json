@@ -14,11 +14,16 @@
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o build/storybook",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "validate": "npm ls",
+    "lint": "eslint src"
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "^3.2.8",
     "@storybook/react": "^3.2.8",
     "coveralls": "^2.13.1"
-  }
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
 }
