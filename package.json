@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
     "material-ui": "^0.19.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -16,16 +18,26 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o build/storybook",
     "eject": "react-scripts eject",
+    "precommit": "lint-staged",
     "validate": "npm ls",
     "lint": "eslint src"
   },
   "devDependencies": {
     "@storybook/react": "^3.2.8",
     "coveralls": "^2.13.1",
+    "eslint": "^4.7.0",
+    "eslint-config-prettier": "^2.5.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "prettier": "^1.7.0",
     "storybook-addon-material-ui": "^0.8.0"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --no-semi --write",
+      "git add"
+    ]
+  },
   "pre-commit": [
-    "lint",
     "test"
   ]
 }
