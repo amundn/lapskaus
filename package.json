@@ -23,12 +23,14 @@
     "lint": "eslint src"
   },
   "devDependencies": {
+    "@storybook/addon-storyshots": "^3.2.8",
     "@storybook/react": "^3.2.8",
     "coveralls": "^2.13.1",
     "eslint": "^4.7.0",
     "eslint-config-prettier": "^2.5.0",
     "eslint-plugin-prettier": "^2.2.0",
     "prettier": "^1.7.0",
+    "react-test-renderer": "^15.6.1",
     "storybook-addon-material-ui": "^0.8.0"
   },
   "lint-staged": {
