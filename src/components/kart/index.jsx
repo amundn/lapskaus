@@ -1,6 +1,12 @@
 import React from 'react'
 import mockup from './mockup.png'
 
-const Kart = () => <img src={mockup} />
-
+const Kart = ({ history, match }) => {
+  return (
+    <div>
+      <h2>{match.params.taxon}</h2>
+      <img src={mockup} onClick={() => history.push('/')} />
+    </div>
+  )
+}
 export default Kart

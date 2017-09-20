@@ -47,6 +47,7 @@ exports[`Storyshots Artshjul mockup 1`] = `
     >
       <div>
         <img
+          onClick={[Function]}
           src="mockup.png"
         />
       </div>
@@ -138,9 +139,15 @@ exports[`Storyshots Kart mockup 1`] = `
       }
     >
       <div>
-        <img
-          src="mockup.png"
-        />
+        <div>
+          <h2>
+            Rødrev
+          </h2>
+          <img
+            onClick={[Function]}
+            src="mockup.png"
+          />
+        </div>
       </div>
     </div>
     <span
@@ -230,9 +237,15 @@ exports[`Storyshots Statistikk mockup 1`] = `
       }
     >
       <div>
-        <img
-          src="mockup.png"
-        />
+        <div>
+          <h2>
+            Rødrev
+          </h2>
+          <img
+            onClick={[Function]}
+            src="mockup.png"
+          />
+        </div>
       </div>
     </div>
     <span
