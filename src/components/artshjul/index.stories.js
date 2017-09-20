@@ -8,6 +8,4 @@ import Artshjul from './index'
 
 storiesOf('Artshjul', module)
   .addDecorator(muiTheme())
-  .add('mockup', () => (
-    <Artshjul />
-  ))
+  .add('mockup', () => <Artshjul />)

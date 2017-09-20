@@ -8,5 +8,4 @@ import Kart from './index'
 
 storiesOf('Kart', module)
   .addDecorator(muiTheme())
-  .add('mockup', () => <Kart
-   match={{ params: { taxon: 'Rødrev' } }} />)
+  .add('mockup', () => <Kart match={{ params: { taxon: 'Rødrev' } }} />)

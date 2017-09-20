@@ -5,7 +5,11 @@ const Statistikk = ({ history, match }) => {
   return (
     <div>
       <h2>{match.params.taxon}</h2>
-      <img src={mockup} onClick={() => history.push('/Rødrev/kart')} />
+      <img
+        src={mockup}
+        alt="mockup"
+        onClick={() => history.push('/Rødrev/kart')}
+      />
     </div>
   )
 }

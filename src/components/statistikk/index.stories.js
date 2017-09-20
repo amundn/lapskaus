@@ -8,7 +8,4 @@ import Statistikk from './index'
 
 storiesOf('Statistikk', module)
   .addDecorator(muiTheme())
-  .add('mockup', () => (
-    <Statistikk
-   match={{ params: { taxon: 'Rødrev' } }} />)
-  )
+  .add('mockup', () => <Statistikk match={{ params: { taxon: 'Rødrev' } }} />)

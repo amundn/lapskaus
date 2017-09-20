@@ -5,7 +5,7 @@ const Kart = ({ history, match }) => {
   return (
     <div>
       <h2>{match.params.taxon}</h2>
-      <img src={mockup} onClick={() => history.push('/')} />
+      <img src={mockup} alt="mockup" onClick={() => history.push('/')} />
     </div>
   )
 }
