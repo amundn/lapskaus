@@ -31,7 +31,7 @@
     "eslint-config-prettier": "^2.5.0",
     "eslint-plugin-prettier": "^2.2.0",
     "prettier": "^1.7.0",
-    "react-test-renderer": "^15.6.1",
+    "react-test-renderer": "^16.0.0",
     "storybook-addon-material-ui": "^0.8.0"
   },
   "lint-staged": {
