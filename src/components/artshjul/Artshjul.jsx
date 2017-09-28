@@ -5,29 +5,36 @@ import Avatar from 'material-ui/Avatar'
 import TaxonGrid from './TaxonGrid'
 import SparkLine from './Sparkline'
 import SparkLineDiff from './SparklineDiff'
-import TaxonContainer from './TaxonContainer'
 import config from '../../config'
+import PropTypes from 'prop-types'
 
 class Artshjul extends React.Component {
+  constructor() {
+    super()
+    this.state = {}
+    this.taxonId = 1285
+  }
   render() {
-    const tree = this.props.tree
-    const onGotoTaxon = this.props.onGotoTaxon
+    const tree = this.state.tree
     if (!tree) return null
     const style = {
-      display: 'inline-block',
-      margin: '16px 32px 16px 0'
+      width: 700,
+      height: '100%'
     }
     return (
-      <div style={{ margin: '48px' }}>
+      <div style={{ margin: '24px' }}>
         <Paper style={style}>
           {tree.breadcrumb && (
-            <Breadcrumb onGotoTaxon={onGotoTaxon} source={tree.breadcrumb} />
+            <Breadcrumb
+              onGotoTaxon={this.handleGotoTaxon}
+              source={tree.breadcrumb}
+            />
           )}
 
           <TaxonGrid
             headerText={label(tree.me)}
             tilesData={tree.children}
-            onGotoTaxon={onGotoTaxon}
+            onGotoTaxon={this.handleGotoTaxon}
           />
 
           {false && (
@@ -68,6 +75,26 @@ class Artshjul extends React.Component {
       </div>
     )
   }
+
+  componentDidMount() {
+    if (this.props.taxonId) this.taxonId = this.props.taxonId
+    this.handleGotoTaxon(this.taxonId)
+  }
+
+  handleGotoTaxon = taxonId => {
+    this.context.fetchJson(
+      'Laster takson',
+      'taxontree/' + taxonId + '.json',
+      tilesData => {
+        this.setState({ tree: tilesData })
+      }
+    )
+  }
+
+  static contextTypes = {
+    fetchJson: PropTypes.func,
+    fetchImage: PropTypes.func
+  }
 }
 
 const label = node => (node.p ? node.p + ' (' + node.s + ')' : node.s)
@@ -76,6 +103,9 @@ const Item = ({ node, rankNo, onGotoTaxon }) => {
   const text = label(node)
   return (
     <ListItem
+      style={{
+        marginLeft: Math.max(0, rankNo - 2) * 10
+      }}
       id={node.id}
       leftAvatar={
         node.id > 0 ? (
@@ -87,7 +117,6 @@ const Item = ({ node, rankNo, onGotoTaxon }) => {
       primaryText={
         <span
           style={{
-            marginLeft: Math.max(0, rankNo - 2) * 10,
             textTransform: 'capitalize'
           }}
         >
@@ -95,7 +124,7 @@ const Item = ({ node, rankNo, onGotoTaxon }) => {
         </span>
       }
       onClick={() => onGotoTaxon(node.id)}
-      nestedItems={[<TaxonContainer key={1} taxonId={node.id} />]}
+      nestedItems={[<TaxonGrid key={1} taxonId={node.id} />]}
     />
   )
 }

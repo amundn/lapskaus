@@ -38,7 +38,6 @@ class Tile extends React.Component {
   }
   render() {
     const tile = this.props.tile
-    console.log('tile', tile)
     return (
       <GridTile
         key={tile.id}
@@ -52,7 +51,7 @@ class Tile extends React.Component {
         actionIcon={
           <IconButton
             onClick={e => {
-              alert('.')
+              alert(this.props.tile.s)
               e.stopPropagation()
             }}
           >
