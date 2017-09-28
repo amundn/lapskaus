@@ -9,12 +9,10 @@ script:
   - "yarn build"
   - "yarn build-storybook"
 deploy:
-  provider: pages
-  local_dir: ./build/
+  provider: surge
+  project: ./build/
+  domain: lapskaus.surge.sh
   skip_cleanup: true
-  github_token: $GH_TOKEN # Set in travis-ci.org dashboard
-  on:
-    branch: master
 after_success:
   - npm run report-coverage
 notifications:

@@ -12,8 +12,8 @@
 
 Brief description
 
-* [Demo](https://artsdatabanken.github.io/lapskaus/storybook)
-* [Storybook](https://artsdatabanken.github.io/lapskaus/storybook)
+* [Demo](https://lapskaus.surge.sh)
+* [Storybook](https://lapskaus.surge.sh/storybook)
 
 ## Getting started / Installing
 
