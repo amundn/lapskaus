@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
-import Artshjul from './components/artshjul'
+import Artshjul from './components/artshjul/ArtshjulContainer'
 import Kart from './components/kart'
 import Statistikk from './components/statistikk'
 
