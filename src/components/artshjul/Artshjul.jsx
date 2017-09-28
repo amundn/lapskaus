@@ -124,7 +124,6 @@ const Item = ({ node, rankNo, onGotoTaxon }) => {
         </span>
       }
       onClick={() => onGotoTaxon(node.id)}
-      nestedItems={[<TaxonGrid key={1} taxonId={node.id} />]}
     />
   )
 }
