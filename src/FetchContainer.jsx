@@ -59,12 +59,15 @@ class FetchContainer extends React.Component {
   }
 
   handleFetchJson = (description, url, callback) => {
+    if (this.props.fetchJson)
+      return this.props.fetchJson(description, url, callback)
     this.handleFetch(description, url, response => {
       response.json().then(json => callback(json))
     })
   }
 
   handleFetch = (description, url, callback) => {
+    console.error(url)
     this.flashMessage(`Loading ${description}...`)
     this.setState(increment)
     url = config.apiUrl + url
@@ -76,9 +79,9 @@ class FetchContainer extends React.Component {
         this.setState(decrement)
       })
       .catch(error => {
-        this.setState(decrement)
         const message = description + ': ' + error.message
         console.error(message)
+        this.setState(decrement)
         this.flashMessage(message)
       })
   }

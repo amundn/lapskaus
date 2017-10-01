@@ -1,29 +1,41 @@
 import React from 'react'
-import { GridList, GridTile } from 'material-ui/GridList'
-import IconButton from 'material-ui/IconButton'
-import OpenInBrowser from 'material-ui/svg-icons/action/open-in-browser'
-import config from '../../config'
+import { GridList, GridListTile } from 'material-ui/GridList'
+//import OpenInBrowser from 'material-ui-icons/OpenInBrowser'
+import Subheader from 'material-ui/List/ListSubheader'
+import { withStyles } from 'material-ui/styles'
+import PropTypes from 'prop-types'
+import TaxonTile from './TaxonTile'
+
+const styles = theme => ({
+  container: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    background: theme.palette.background.paper
+  },
+  gridList: {
+    width: '100%',
+    height: '100%'
+  }
+})
 
 class TaxonGrid extends React.Component {
   render() {
-    const styles = {
-      root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around'
-      },
-      gridList: {
-        width: 800,
-        //      height: 650
-        overflowY: 'none'
-      }
-    }
-
+    const classes = this.props.classes
     return (
-      <div style={styles.root}>
-        <GridList cols={3} cellHeight={180} style={styles.gridList}>
+      <div className={classes.container}>
+        <GridList cellHeight={180} className={classes.gridList} cols={3}>
+          <GridListTile cols={3} style={{ height: 'auto' }}>
+            <Subheader>{this.props.headerText}</Subheader>
+          </GridListTile>
           {this.props.tilesData.map(tile => (
-            <Tile onGotoTaxon={this.props.onGotoTaxon} tile={tile} key={tile.id} />
+            <TaxonTile
+              classes
+              onGotoTaxon={this.props.onGotoTaxon}
+              tile={tile}
+              key={tile.id}
+            />
           ))}
         </GridList>
       </div>
@@ -31,46 +43,10 @@ class TaxonGrid extends React.Component {
   }
 }
 
-class Tile extends React.Component {
-  constructor() {
-    super()
-    this.state = { opacity: 0 }
-  }
-  render() {
-    const tile = this.props.tile
-    return (
-      <GridTile
-        key={tile.id}
-        title={<span style={{ textTransform: 'capitalize' }}>{tile.p}</span>}
-        subtitle={
-          <span>
-            <b>{tile.s}</b>
-          </span>
-        }
-        onClick={() => this.props.onGotoTaxon(tile.id)}
-        actionIcon={
-          <IconButton
-            onClick={e => {
-              alert(this.props.tile.s)
-              e.stopPropagation()
-            }}
-          >
-            <OpenInBrowser color="white" />
-          </IconButton>
-        }
-      >
-        <img
-          onLoad={() => this.setState({ opacity: 1 })}
-          style={{
-            opacity: this.state.opacity,
-            transition: 'opacity 0.3s'
-          }}
-          alt="taxon"
-          src={config.apiUrl + 'taxonphoto/' + tile.s + '.jpg'}
-        />
-      </GridTile>
-    )
-  }
+TaxonGrid.propTypes = {
+  headerText: PropTypes.string.isRequired,
+  classes: PropTypes.object.isRequired,
+  onGotoTaxon: PropTypes.func
 }
 
-export default TaxonGrid
+export default withStyles(styles)(TaxonGrid)

@@ -1,24 +1,31 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Artshjul from './components/artshjul/Artshjul'
+import Artstre from './components/artstre/Artstre'
 import Kart from './components/kart'
 import Statistikk from './components/statistikk'
 import FetchContainer from './FetchContainer'
-import MuiTheme from 'material-ui/styles/MuiThemeProvider'
+import withRoot from './components/withRoot'
+import PropTypes from 'prop-types'
+
 class App extends Component {
   render() {
     return (
-      <MuiTheme>
-      <BrowserRouter>
-        <FetchContainer>
+      <div>
+        <BrowserRouter>
+          <FetchContainer>
             <Route path="/" exact component={Artshjul} />
-            <Route path="/:taxon/" exact component={Statistikk} />
+            <Route path="/art" exact component={Artstre} />
+            <Route path="/art/:taxon/" exact component={Statistikk} />
             <Route path="/:taxon/kart" component={Kart} />
-        </FetchContainer>
-      </BrowserRouter>
-      </MuiTheme>
+          </FetchContainer>
+        </BrowserRouter>
+      </div>
     )
   }
 }
+App.propTypes = {
+  classes: PropTypes.object.isRequired
+}
 
-export default App
+export default withRoot(App)

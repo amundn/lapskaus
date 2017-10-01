@@ -1,291 +1,821 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Artshjul mockup 1`] = `
-<div
-  style={
-    Object {
-      "background": "#ffffff",
-      "bottom": 0,
-      "left": 0,
-      "position": "absolute",
-      "right": 0,
-      "top": 0,
-    }
-  }
->
-  <div
-    className="SplitPane  vertical "
-    style={
-      Object {
-        "MozUserSelect": "text",
-        "WebkitUserSelect": "text",
-        "display": "flex",
-        "flex": 1,
-        "flexDirection": "row",
-        "height": "100%",
-        "left": 0,
-        "msUserSelect": "text",
-        "outline": "none",
-        "overflow": "hidden",
-        "position": "absolute",
-        "right": 0,
-        "userSelect": "text",
-      }
-    }
-  >
-    <div
-      className="Pane vertical Pane1"
-      style={
-        Object {
-          "flex": 1,
-          "outline": "none",
-          "overflowX": "auto",
-          "overflowY": "auto",
-          "position": "relative",
-        }
-      }
-    >
-      <div>
+<div>
+  <div>
+    <div>
+      <ul
+        className="MuiList-root-1 MuiList-padding-2"
+      >
         <div>
-          <div />
+          <li
+            className="MuiButtonBase-root-15 MuiListItem-root-5 MuiListItem-gutters-12 MuiListItem-button-13 MuiListItem-default-8"
+            disabled={false}
+            id={0}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            style={
+              Object {
+                "xmarginLeft": 0,
+              }
+            }
+            tabIndex={0}
+          >
+            <div
+              className="MuiListItemText-root-17"
+            >
+              <h3
+                className="MuiTypography-root-22 MuiTypography-subheading-29 MuiListItemText-text-20"
+              >
+                <span
+                  style={
+                    Object {
+                      "textTransform": "capitalize",
+                    }
+                  }
+                >
+                  Life (Life)
+                </span>
+              </h3>
+            </div>
+            <span
+              className="MuiTouchRipple-root-44"
+            />
+          </li>
+          <li
+            className="MuiButtonBase-root-15 MuiListItem-root-5 MuiListItem-gutters-12 MuiListItem-button-13 MuiListItem-default-8"
+            disabled={false}
+            id={1131}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            style={
+              Object {
+                "xmarginLeft": 0,
+              }
+            }
+            tabIndex={0}
+          >
+            <div
+              className="MuiAvatar-root-51"
+            >
+              <img
+                alt={undefined}
+                className="MuiAvatar-img-53"
+                sizes={undefined}
+                src="//nodeyoda.westeurope.cloudapp.azure.com/taxonPhoto/Plantae.jpg"
+                srcSet={undefined}
+              />
+            </div>
+            <div
+              className="MuiListItemText-root-17"
+            >
+              <h3
+                className="MuiTypography-root-22 MuiTypography-subheading-29 MuiListItemText-text-20"
+              >
+                <span
+                  style={
+                    Object {
+                      "textTransform": "capitalize",
+                    }
+                  }
+                >
+                  planteriket (Plantae)
+                </span>
+              </h3>
+            </div>
+            <span
+              className="MuiTouchRipple-root-44"
+            />
+          </li>
         </div>
+      </ul>
+      <div
+        className="TaxonGrid-container-54"
+      >
+        <ul
+          className="MuiGridList-root-56 TaxonGrid-gridList-55"
+          style={
+            Object {
+              "margin": -2,
+            }
+          }
+        >
+          <li
+            className="MuiGridListTile-root-57"
+            style={
+              Object {
+                "height": "auto",
+                "padding": 2,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiGridListTile-tile-58"
+            >
+              <div
+                className="MuiListSubheader-root-61 MuiListSubheader-sticky-65"
+              >
+                dekkfroete blomsterplanter (Magnoliophyta)
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiGridListTile-root-57"
+            onClick={[Function]}
+            style={
+              Object {
+                "margin": "2px",
+              }
+            }
+          >
+            <div
+              className="MuiGridListTile-tile-58"
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "url(//nodeyoda.westeurope.cloudapp.azure.com/taxonphoto/Monocots.jpg)",
+                    "backgroundPosition": "center center",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "height": "379px",
+                    "position": "relative",
+                    "width": "379px",
+                  }
+                }
+              />
+              <div
+                className="MuiGridListTileBar-root-69 TaxonTile-titleBar-67 MuiGridListTileBar-rootTop-71 MuiGridListTileBar-rootWithSubtitle-72"
+              >
+                <div
+                  className="MuiGridListTileBar-titleWrap-73 MuiGridListTileBar-titleWrapActionRight-75"
+                >
+                  <div
+                    className="MuiGridListTileBar-title-76 TaxonTile-title-66"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "textTransform": "capitalize",
+                        }
+                      }
+                    >
+                      enfrobladete blomsterplanter
+                    </span>
+                  </div>
+                  <div
+                    className="MuiGridListTileBar-subtitle-77"
+                  >
+                    <b>
+                      Monocots
+                    </b>
+                  </div>
+                </div>
+                <div
+                  className=""
+                >
+                  <button
+                    className="MuiButtonBase-root-15 MuiIconButton-root-80"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    role="button"
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <span
+                      className="MuiIconButton-label-86"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="MuiSvgIcon-root-89"
+                        color="white"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root-44"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiGridListTile-root-57"
+            onClick={[Function]}
+            style={
+              Object {
+                "margin": "2px",
+              }
+            }
+          >
+            <div
+              className="MuiGridListTile-tile-58"
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundImage": "url(//nodeyoda.westeurope.cloudapp.azure.com/taxonphoto/Eudicots.jpg)",
+                    "backgroundPosition": "center center",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "height": "379px",
+                    "position": "relative",
+                    "width": "379px",
+                  }
+                }
+              />
+              <div
+                className="MuiGridListTileBar-root-69 TaxonTile-titleBar-67 MuiGridListTileBar-rootTop-71 MuiGridListTileBar-rootWithSubtitle-72"
+              >
+                <div
+                  className="MuiGridListTileBar-titleWrap-73 MuiGridListTileBar-titleWrapActionRight-75"
+                >
+                  <div
+                    className="MuiGridListTileBar-title-76 TaxonTile-title-66"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "textTransform": "capitalize",
+                        }
+                      }
+                    >
+                      tofrobladete blomsterplanter
+                    </span>
+                  </div>
+                  <div
+                    className="MuiGridListTileBar-subtitle-77"
+                  >
+                    <b>
+                      Eudicots
+                    </b>
+                  </div>
+                </div>
+                <div
+                  className=""
+                >
+                  <button
+                    className="MuiButtonBase-root-15 MuiIconButton-root-80"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    role="button"
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <span
+                      className="MuiIconButton-label-86"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="MuiSvgIcon-root-89"
+                        color="white"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root-44"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-    <span
-      className="Resizer vertical "
-      onClick={[Function]}
-      onDoubleClick={[Function]}
-      onMouseDown={[Function]}
-      onTouchEnd={[Function]}
-      onTouchStart={[Function]}
-      style={
-        Object {
-          "cursor": "col-resize",
-          "marginRight": -6,
-          "width": 10,
-          "zIndex": 1,
-        }
-      }
-    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Artstre med avatar 1`] = `
+<div>
+  <div>
     <div
-      className="Pane vertical Pane2"
-      style={
-        Object {
-          "flex": "none",
-          "outline": "none",
-          "position": "relative",
-          "width": 0,
-        }
-      }
+      className="Artstre-root-90"
     >
-      <div
-        className="sb-addon-material-ui-theme_sidebar"
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
-      />
+      <ul
+        className="MuiList-root-1 MuiList-padding-2"
+      >
+        <div>
+          <div
+            className="MuiListItem-container-6"
+          >
+            <li
+              className="MuiButtonBase-root-15 MuiListItem-root-5 MuiListItem-gutters-12 MuiListItem-button-13 MuiListItem-secondaryAction-14 MuiListItem-default-8"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <div
+                className="MuiAvatar-root-51"
+              >
+                <img
+                  alt="avatar"
+                  className="MuiAvatar-img-53 TaxonListItem-img-91"
+                  sizes={undefined}
+                  src="//nodeyoda.westeurope.cloudapp.azure.com/taxonphoto/Life.jpg"
+                  srcSet={undefined}
+                />
+              </div>
+              <div
+                className="MuiListItemText-root-17 TaxonListItem-listitem-92"
+              >
+                <h3
+                  className="MuiTypography-root-22 MuiTypography-subheading-29 MuiListItemText-text-20"
+                >
+                  Life
+                </h3>
+                <p
+                  className="MuiTypography-root-22 MuiTypography-body1-31 MuiTypography-colorSecondary-42 MuiListItemText-text-20"
+                >
+                  Life
+                </p>
+              </div>
+              <span
+                className="MuiTouchRipple-root-44"
+              />
+            </li>
+            <div
+              className="MuiListItemSecondaryAction-root-93"
+            >
+              <button
+                className="MuiButtonBase-root-15 MuiIconButton-root-80"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiIconButton-label-86"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-89"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-44"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiListItem-container-6"
+          >
+            <li
+              className="MuiButtonBase-root-15 MuiListItem-root-5 MuiListItem-gutters-12 MuiListItem-button-13 MuiListItem-secondaryAction-14 MuiListItem-default-8"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <div
+                className="MuiAvatar-root-51"
+              >
+                <img
+                  alt="avatar"
+                  className="MuiAvatar-img-53 TaxonListItem-img-91"
+                  sizes={undefined}
+                  src="//nodeyoda.westeurope.cloudapp.azure.com/taxonphoto/Plantae.jpg"
+                  srcSet={undefined}
+                />
+              </div>
+              <div
+                className="MuiListItemText-root-17 TaxonListItem-listitem-92"
+              >
+                <h3
+                  className="MuiTypography-root-22 MuiTypography-subheading-29 MuiListItemText-text-20"
+                >
+                  planteriket
+                </h3>
+                <p
+                  className="MuiTypography-root-22 MuiTypography-body1-31 MuiTypography-colorSecondary-42 MuiListItemText-text-20"
+                >
+                  Plantae
+                </p>
+              </div>
+              <span
+                className="MuiTouchRipple-root-44"
+              />
+            </li>
+            <div
+              className="MuiListItemSecondaryAction-root-93"
+            >
+              <button
+                className="MuiButtonBase-root-15 MuiIconButton-root-80"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiIconButton-label-86"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-89"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-44"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiListItem-container-6"
+          >
+            <li
+              className="MuiButtonBase-root-15 MuiListItem-root-5 MuiListItem-gutters-12 MuiListItem-button-13 MuiListItem-secondaryAction-14 MuiListItem-default-8"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <div
+                className="MuiAvatar-root-51"
+              >
+                <img
+                  alt="avatar"
+                  className="MuiAvatar-img-53 TaxonListItem-img-91"
+                  sizes={undefined}
+                  src="//nodeyoda.westeurope.cloudapp.azure.com/taxonphoto/Magnoliophyta.jpg"
+                  srcSet={undefined}
+                />
+              </div>
+              <div
+                className="MuiListItemText-root-17 TaxonListItem-listitem-92"
+              >
+                <h3
+                  className="MuiTypography-root-22 MuiTypography-subheading-29 MuiListItemText-text-20"
+                >
+                  dekkfroete blomsterplanter
+                </h3>
+                <p
+                  className="MuiTypography-root-22 MuiTypography-body1-31 MuiTypography-colorSecondary-42 MuiListItemText-text-20"
+                >
+                  Magnoliophyta
+                </p>
+              </div>
+              <span
+                className="MuiTouchRipple-root-44"
+              />
+            </li>
+            <div
+              className="MuiListItemSecondaryAction-root-93"
+            >
+              <button
+                className="MuiButtonBase-root-15 MuiIconButton-root-80"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiIconButton-label-86"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-89"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-44"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            className="MuiListItem-container-6"
+          >
+            <li
+              className="MuiButtonBase-root-15 MuiListItem-root-5 MuiListItem-gutters-12 MuiListItem-button-13 MuiListItem-secondaryAction-14 MuiListItem-default-8"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <div
+                className="MuiAvatar-root-51"
+              >
+                <img
+                  alt="avatar"
+                  className="MuiAvatar-img-53 TaxonListItem-img-91"
+                  sizes={undefined}
+                  src="//nodeyoda.westeurope.cloudapp.azure.com/taxonphoto/Monocots.jpg"
+                  srcSet={undefined}
+                />
+              </div>
+              <div
+                className="MuiListItemText-root-17 TaxonListItem-listitem-92"
+              >
+                <h3
+                  className="MuiTypography-root-22 MuiTypography-subheading-29 MuiListItemText-text-20"
+                >
+                  enfrobladete blomsterplanter
+                </h3>
+                <p
+                  className="MuiTypography-root-22 MuiTypography-body1-31 MuiTypography-colorSecondary-42 MuiListItemText-text-20"
+                >
+                  Monocots
+                </p>
+              </div>
+              <span
+                className="MuiTouchRipple-root-44"
+              />
+            </li>
+            <div
+              className="MuiListItemSecondaryAction-root-93"
+            >
+              <button
+                className="MuiButtonBase-root-15 MuiIconButton-root-80"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiIconButton-label-86"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-89"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-44"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            className="MuiListItem-container-6"
+          >
+            <li
+              className="MuiButtonBase-root-15 MuiListItem-root-5 MuiListItem-gutters-12 MuiListItem-button-13 MuiListItem-secondaryAction-14 MuiListItem-default-8"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <div
+                className="MuiAvatar-root-51"
+              >
+                <img
+                  alt="avatar"
+                  className="MuiAvatar-img-53 TaxonListItem-img-91"
+                  sizes={undefined}
+                  src="//nodeyoda.westeurope.cloudapp.azure.com/taxonphoto/Eudicots.jpg"
+                  srcSet={undefined}
+                />
+              </div>
+              <div
+                className="MuiListItemText-root-17 TaxonListItem-listitem-92"
+              >
+                <h3
+                  className="MuiTypography-root-22 MuiTypography-subheading-29 MuiListItemText-text-20"
+                >
+                  tofrobladete blomsterplanter
+                </h3>
+                <p
+                  className="MuiTypography-root-22 MuiTypography-body1-31 MuiTypography-colorSecondary-42 MuiListItemText-text-20"
+                >
+                  Eudicots
+                </p>
+              </div>
+              <span
+                className="MuiTouchRipple-root-44"
+              />
+            </li>
+            <div
+              className="MuiListItemSecondaryAction-root-93"
+            >
+              <button
+                className="MuiButtonBase-root-15 MuiIconButton-root-80"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiIconButton-label-86"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-89"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-44"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </ul>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Kart mockup 1`] = `
-<div
-  style={
-    Object {
-      "background": "#ffffff",
-      "bottom": 0,
-      "left": 0,
-      "position": "absolute",
-      "right": 0,
-      "top": 0,
-    }
-  }
->
-  <div
-    className="SplitPane  vertical "
-    style={
-      Object {
-        "MozUserSelect": "text",
-        "WebkitUserSelect": "text",
-        "display": "flex",
-        "flex": 1,
-        "flexDirection": "row",
-        "height": "100%",
-        "left": 0,
-        "msUserSelect": "text",
-        "outline": "none",
-        "overflow": "hidden",
-        "position": "absolute",
-        "right": 0,
-        "userSelect": "text",
-      }
-    }
-  >
-    <div
-      className="Pane vertical Pane1"
-      style={
-        Object {
-          "flex": 1,
-          "outline": "none",
-          "overflowX": "auto",
-          "overflowY": "auto",
-          "position": "relative",
-        }
-      }
-    >
-      <div>
-        <div>
-          <h2>
-            Rødrev
-          </h2>
-          <img
-            alt="mockup"
-            onClick={[Function]}
-            src="mockup.png"
-          />
-        </div>
-      </div>
-    </div>
-    <span
-      className="Resizer vertical "
-      onClick={[Function]}
-      onDoubleClick={[Function]}
-      onMouseDown={[Function]}
-      onTouchEnd={[Function]}
-      onTouchStart={[Function]}
-      style={
-        Object {
-          "cursor": "col-resize",
-          "marginRight": -6,
-          "width": 10,
-          "zIndex": 1,
-        }
-      }
-    />
-    <div
-      className="Pane vertical Pane2"
-      style={
-        Object {
-          "flex": "none",
-          "outline": "none",
-          "position": "relative",
-          "width": 0,
-        }
-      }
-    >
-      <div
-        className="sb-addon-material-ui-theme_sidebar"
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
-      />
-    </div>
-  </div>
+<div>
+  <h2>
+    Rødrev
+  </h2>
+  <img
+    alt="mockup"
+    onClick={[Function]}
+    src="mockup.png"
+  />
 </div>
 `;
 
 exports[`Storyshots Statistikk mockup 1`] = `
-<div
-  style={
-    Object {
-      "background": "#ffffff",
-      "bottom": 0,
-      "left": 0,
-      "position": "absolute",
-      "right": 0,
-      "top": 0,
-    }
-  }
->
-  <div
-    className="SplitPane  vertical "
-    style={
-      Object {
-        "MozUserSelect": "text",
-        "WebkitUserSelect": "text",
-        "display": "flex",
-        "flex": 1,
-        "flexDirection": "row",
-        "height": "100%",
-        "left": 0,
-        "msUserSelect": "text",
-        "outline": "none",
-        "overflow": "hidden",
-        "position": "absolute",
-        "right": 0,
-        "userSelect": "text",
-      }
-    }
-  >
-    <div
-      className="Pane vertical Pane1"
-      style={
-        Object {
-          "flex": 1,
-          "outline": "none",
-          "overflowX": "auto",
-          "overflowY": "auto",
-          "position": "relative",
-        }
-      }
-    >
-      <div>
-        <div>
-          <h2>
-            Rødrev
-          </h2>
-          <img
-            alt="mockup"
-            onClick={[Function]}
-            src="mockup.png"
-          />
-        </div>
-      </div>
-    </div>
-    <span
-      className="Resizer vertical "
-      onClick={[Function]}
-      onDoubleClick={[Function]}
-      onMouseDown={[Function]}
-      onTouchEnd={[Function]}
-      onTouchStart={[Function]}
-      style={
-        Object {
-          "cursor": "col-resize",
-          "marginRight": -6,
-          "width": 10,
-          "zIndex": 1,
-        }
-      }
-    />
-    <div
-      className="Pane vertical Pane2"
-      style={
-        Object {
-          "flex": "none",
-          "outline": "none",
-          "position": "relative",
-          "width": 0,
-        }
-      }
-    >
-      <div
-        className="sb-addon-material-ui-theme_sidebar"
-        style={
-          Object {
-            "height": "100%",
-            "width": "100%",
-          }
-        }
-      />
-    </div>
-  </div>
+<div>
+  <h2>
+    Rødrev
+  </h2>
+  <img
+    alt="mockup"
+    onClick={[Function]}
+    src="mockup.png"
+  />
 </div>
 `;

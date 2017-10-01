@@ -1,5 +1,11 @@
 import React from 'react'
-import { Sparklines, SparklinesNormalBand, SparklinesReferenceLine, SparklinesLine, SparklinesBars } from 'react-sparklines'
+import {
+  Sparklines,
+  SparklinesNormalBand,
+  SparklinesReferenceLine,
+  SparklinesLine,
+  SparklinesBars
+} from 'react-sparklines'
 import config from '../../config'
 
 class SparkLineContainer extends React.Component {
@@ -15,7 +21,17 @@ class SparkLineContainer extends React.Component {
   }
 
   loadData(taxonId, target) {
-    const url = config.apiUrl+'stat/' + taxonId + '.json'
+    const url = config.apiUrl + 'stat/' + taxonId + '.json'
+
+    console.error('===')
+    this.context.fetchJson('Statistikk', url, json => {
+      var ns = {}
+      ns[target] = json.distribution
+      this.setState(ns)
+    })
+    console.error('===')
+    /*
+
     fetch(url)
       .then(response => response.json())
       .then(json => {
@@ -23,7 +39,7 @@ class SparkLineContainer extends React.Component {
         ns[target] = json.distribution
         this.setState(ns)
       })
-      .catch(err => console.error(err))
+      .catch(err => console.error(err))*/
   }
 
   componentWillMount() {
@@ -40,7 +56,7 @@ class SparkLineContainer extends React.Component {
   calculate(child, parent) {
     const p = this.normalize(parent)
     const c = this.normalize(child)
-//    for (var i = 0; i < c.length; i++) c[i] = (c[i] - p[i]) / p[i]
+    //    for (var i = 0; i < c.length; i++) c[i] = (c[i] - p[i]) / p[i]
     for (var i = 0; i < c.length; i++) c[i] = c[i] - p[i]
 
     return c

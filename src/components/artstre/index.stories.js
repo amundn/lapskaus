@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions'
 import FetchContainer from '../../FetchContainer'
 
 import { Paper } from 'material-ui'
-import Artshjul from './Artshjul'
+import Artstre from './Artstre'
 
 const tree = {
   me: {
@@ -43,16 +43,15 @@ const tree = {
     }
   ]
 }
-
 function mock(description, url, callback)  {
   console.log(description, url)
   callback(tree)
 }
 
-storiesOf('Artshjul', module)
+storiesOf('Artstre', module)
  // .addDecorator(muiTheme())
-  .add('mockup', () => (
+  .add('med avatar', () => (
     <FetchContainer fetchJson={mock}>
-      <Artshjul taxonId={59764} />
+      <Artstre taxonId={59764} />
     </FetchContainer>
   ))

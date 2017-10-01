@@ -4,13 +4,19 @@
   "private": true,
   "dependencies": {
     "husky": "^0.14.3",
+    "jss": "^8.1.0",
+    "jss-preset-default": "^3.0.0",
     "lint-staged": "^4.2.1",
-    "material-ui": "^0.19.1",
-    "react": "15.*",
-    "react-dom": "15.*",
+    "material-ui": "next",
+    "material-ui-icons": "^1.0.0-beta.10",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-jss": "^7.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14",
-    "react-sparklines": "^1.7.0"
+    "react-scripts": "^1.0.14",
+    "react-sparklines": "^1.7.0",
+    "recompose": "^0.25.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,9 +37,8 @@
     "eslint": "^4.7.0",
     "eslint-config-prettier": "^2.5.0",
     "eslint-plugin-prettier": "^2.2.0",
-    "prettier": "^1.7.0",
-    "react-test-renderer": "15.*",
-    "storybook-addon-material-ui": "^0.8.0"
+    "prettier": "^1.7.3",
+    "react-test-renderer": "^16.0.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
