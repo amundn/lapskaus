@@ -2,7 +2,7 @@ import React from 'react'
 import { GridListTile, GridListTileBar } from 'material-ui/GridList'
 import IconButton from 'material-ui/IconButton'
 import OpenInBrowser from 'material-ui-icons/OpenInBrowser'
-import config from '../../config'
+import config from '../../../config'
 import { withStyles } from 'material-ui/styles'
 import PropTypes from 'prop-types'
 
@@ -28,12 +28,12 @@ class TaxonTile extends React.Component {
     this.state = { opacity: 0 }
   }
   render() {
-    const { tile, classes } = this.props
+    const { tile, classes, onPickTaxon } = this.props
     return (
       <GridListTile
         cols={1}
         rows={1}
-        onClick={() => this.props.onGotoTaxon(tile.id)}
+        onClick={() => this.props.onNavigateToTaxon(tile.id)}
         style={{
           margin: '2px'
         }}
@@ -61,7 +61,7 @@ class TaxonTile extends React.Component {
           actionIcon={
             <IconButton
               onClick={e => {
-                alert(this.props.tile.s)
+                onPickTaxon(tile.id)
                 e.stopPropagation()
               }}
             >

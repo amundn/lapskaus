@@ -11,7 +11,7 @@ import {
 } from 'material-ui/List'
 import { withStyles } from 'material-ui/styles'
 
-import config from '../../config'
+import config from '../../../config'
 
 const styles = theme => ({
   img: {
@@ -24,9 +24,9 @@ const styles = theme => ({
 
 class TaxonListItem extends React.Component {
   render() {
-    const { tile, onGotoTaxon, classes } = this.props
+    const { tile, onNavigateToTaxon, onPickTaxon, classes } = this.props
     return (
-      <ListItem button onClick={() => onGotoTaxon(tile.id)}>
+      <ListItem button onClick={() => onNavigateToTaxon(tile.id)}>
         <Avatar
           classes={{
             img: classes.img
@@ -42,7 +42,7 @@ class TaxonListItem extends React.Component {
         <ListItemSecondaryAction>
           <IconButton
             onClick={e => {
-              alert(tile.s)
+              onPickTaxon(tile.id)
               e.stopPropagation()
             }}
           >

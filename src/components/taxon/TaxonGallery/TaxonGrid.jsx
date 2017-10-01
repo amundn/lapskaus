@@ -1,6 +1,5 @@
 import React from 'react'
 import { GridList, GridListTile } from 'material-ui/GridList'
-//import OpenInBrowser from 'material-ui-icons/OpenInBrowser'
 import Subheader from 'material-ui/List/ListSubheader'
 import { withStyles } from 'material-ui/styles'
 import PropTypes from 'prop-types'
@@ -32,7 +31,8 @@ class TaxonGrid extends React.Component {
           {this.props.tilesData.map(tile => (
             <TaxonTile
               classes
-              onGotoTaxon={this.props.onGotoTaxon}
+              onNavigateToTaxon={this.props.onNavigateToTaxon}
+              onPickTaxon={this.props.onPickTaxon}
               tile={tile}
               key={tile.id}
             />
@@ -46,7 +46,7 @@ class TaxonGrid extends React.Component {
 TaxonGrid.propTypes = {
   headerText: PropTypes.string.isRequired,
   classes: PropTypes.object.isRequired,
-  onGotoTaxon: PropTypes.func
+  onNavigateToTaxon: PropTypes.func
 }
 
 export default withStyles(styles)(TaxonGrid)

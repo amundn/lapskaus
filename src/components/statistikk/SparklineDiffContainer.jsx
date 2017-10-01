@@ -1,14 +1,7 @@
 import React from 'react'
-import {
-  Sparklines,
-  SparklinesNormalBand,
-  SparklinesReferenceLine,
-  SparklinesLine,
-  SparklinesBars
-} from 'react-sparklines'
 import config from '../../config'
 
-class SparkLineContainer extends React.Component {
+class SparkLineDiffContainer extends React.Component {
   constructor() {
     super()
     this.state = { data: [] }
@@ -71,15 +64,4 @@ class SparkLineContainer extends React.Component {
   }
 }
 
-const SparkLine = ({ data, color }) => (
-  <div style={{ width: 200 }}>
-    <Sparklines data={data} width={100} height={30} margin={2}>
-      <SparklinesLine color={color} />
-      <SparklinesReferenceLine type="mean" />
-      <SparklinesBars style={{ fill: 'slategray', fillOpacity: '.5' }} />
-      <SparklinesNormalBand />
-    </Sparklines>
-  </div>
-)
-
-export default SparkLineContainer
+export default SparklineDiffContainer

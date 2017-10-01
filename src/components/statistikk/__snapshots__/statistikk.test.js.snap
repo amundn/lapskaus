@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sparkline 1`] = `
+<div
+  style={
+    Object {
+      "width": 200,
+    }
+  }
+>
+  <svg
+    preserveAspectRatio="none"
+    style={undefined}
+    viewBox="0 0 100 20"
+  >
+    <g>
+      <circle
+        cx={2}
+        cy={18}
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        r={2}
+        style={
+          Object {
+            "fill": "red",
+            "fillOpacity": ".1",
+            "pointerEvents": "auto",
+            "stroke": "none",
+            "strokeWidth": "0",
+          }
+        }
+      />
+      <circle
+        cx={50}
+        cy={10}
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        r={2}
+        style={
+          Object {
+            "fill": "red",
+            "fillOpacity": ".1",
+            "pointerEvents": "auto",
+            "stroke": "none",
+            "strokeWidth": "0",
+          }
+        }
+      />
+      <circle
+        cx={98}
+        cy={2}
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        r={2}
+        style={
+          Object {
+            "fill": "red",
+            "fillOpacity": ".1",
+            "pointerEvents": "auto",
+            "stroke": "none",
+            "strokeWidth": "0",
+          }
+        }
+      />
+      <polyline
+        points="2 18 50 10 98 2 98 18 2 18 2 18"
+        style={
+          Object {
+            "fill": "red",
+            "fillOpacity": ".1",
+            "pointerEvents": "auto",
+            "stroke": "none",
+            "strokeWidth": "0",
+          }
+        }
+      />
+      <polyline
+        points="2 18 50 10 98 2"
+        style={
+          Object {
+            "fill": "none",
+            "stroke": "red",
+            "strokeLinecap": "round",
+            "strokeLinejoin": "round",
+            "strokeWidth": "1",
+          }
+        }
+      />
+    </g>
+    <g
+      transform="scale(1,-1)"
+    >
+      <rect
+        height={2}
+        onMouseMove={undefined}
+        style={
+          Object {
+            "fill": "slategray",
+            "fillOpacity": ".5",
+          }
+        }
+        width={44}
+        x={-20}
+        y={-20}
+      />
+      <rect
+        height={10}
+        onMouseMove={undefined}
+        style={
+          Object {
+            "fill": "slategray",
+            "fillOpacity": ".5",
+          }
+        }
+        width={44}
+        x={28}
+        y={-20}
+      />
+      <rect
+        height={18}
+        onMouseMove={undefined}
+        style={
+          Object {
+            "fill": "slategray",
+            "fillOpacity": ".5",
+          }
+        }
+        width={44}
+        x={76}
+        y={-20}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Sparkline diff 1`] = `
+<div
+  style={
+    Object {
+      "width": 200,
+    }
+  }
+>
+  <svg
+    preserveAspectRatio="none"
+    style={undefined}
+    viewBox="0 0 100 30"
+  >
+    <g>
+      <circle
+        cx={2}
+        cy={28}
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        r={2}
+        style={
+          Object {
+            "fill": "red",
+            "fillOpacity": ".1",
+            "pointerEvents": "auto",
+            "stroke": "none",
+            "strokeWidth": "0",
+          }
+        }
+      />
+      <circle
+        cx={50}
+        cy={15}
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        r={2}
+        style={
+          Object {
+            "fill": "red",
+            "fillOpacity": ".1",
+            "pointerEvents": "auto",
+            "stroke": "none",
+            "strokeWidth": "0",
+          }
+        }
+      />
+      <circle
+        cx={98}
+        cy={2}
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        r={2}
+        style={
+          Object {
+            "fill": "red",
+            "fillOpacity": ".1",
+            "pointerEvents": "auto",
+            "stroke": "none",
+            "strokeWidth": "0",
+          }
+        }
+      />
+      <polyline
+        points="2 28 50 15 98 2 98 28 2 28 2 28"
+        style={
+          Object {
+            "fill": "red",
+            "fillOpacity": ".1",
+            "pointerEvents": "auto",
+            "stroke": "none",
+            "strokeWidth": "0",
+          }
+        }
+      />
+      <polyline
+        points="2 28 50 15 98 2"
+        style={
+          Object {
+            "fill": "none",
+            "stroke": "red",
+            "strokeLinecap": "round",
+            "strokeLinejoin": "round",
+            "strokeWidth": "1",
+          }
+        }
+      />
+    </g>
+    <line
+      style={
+        Object {
+          "stroke": "red",
+          "strokeDasharray": "2, 2",
+          "strokeOpacity": 0.75,
+        }
+      }
+      x1={2}
+      x2={98}
+      y1={17}
+      y2={17}
+    />
+    <g
+      transform="scale(1,-1)"
+    >
+      <rect
+        height={2}
+        onMouseMove={undefined}
+        style={
+          Object {
+            "fill": "slategray",
+            "fillOpacity": ".5",
+          }
+        }
+        width={44}
+        x={-20}
+        y={-30}
+      />
+      <rect
+        height={15}
+        onMouseMove={undefined}
+        style={
+          Object {
+            "fill": "slategray",
+            "fillOpacity": ".5",
+          }
+        }
+        width={44}
+        x={28}
+        y={-30}
+      />
+      <rect
+        height={28}
+        onMouseMove={undefined}
+        style={
+          Object {
+            "fill": "slategray",
+            "fillOpacity": ".5",
+          }
+        }
+        width={44}
+        x={76}
+        y={-30}
+      />
+    </g>
+    <rect
+      height={NaN}
+      style={
+        Object {
+          "fill": "red",
+          "fillOpacity": 0.1,
+        }
+      }
+      width={96}
+      x={2}
+      y={6.385544447939562}
+    />
+  </svg>
+</div>
+`;

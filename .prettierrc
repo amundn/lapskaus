@@ -1,6 +1,5 @@
 {
     "printWidth": 80,
     "parser": "flow",
-    "semi": false,
-    "single-quote": true
+    "semi": false
   }
